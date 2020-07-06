@@ -1,17 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+
+//need to be Uppercase
+//import First from './components/first'
+//import GM from './components/GoodMorning'
+//import Good, { See} from './components/Mult'
+//import Multi from './components/Mult'
+import Father from './components/Father'
+import Son from './components/Son'
+
+import Greetings from './components/Greetings'
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+<div>
+    <Father name="Palu" lastName="Silva">
+        <Son name="Pedro" ></Son>
+        <Son name="Carla AB"></Son>
+        <Son name="Ant At"></Son>
+    </Father>
+</div>, document.getElementById('root'))
